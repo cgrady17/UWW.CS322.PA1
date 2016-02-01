@@ -1,0 +1,84 @@
+
+README file for Programming Assignment 1
+========================================
+
+Your directory should now contain the following files:
+
+ Makefile -> [course dir]/assignments/PA1/Makefile
+ README
+ atoi.cl -> [course dir]/assignments/PA1/atoi.cl
+ stack.cl
+ stack.test -> [course dir]/assignments/PA1/stack.test
+
+	The Makefile contains targets for compiling and running your
+	program, as well as handing it in.
+
+	The README contains this info. Part of the assignment is to
+	answer the questions at the end of this README file.
+	Just edit this file.
+
+	atoi.cl is an implementation in Cool of the string to integer
+	conversion function known from the C language.
+
+	stack.cl is the skeleton file which you should fill in with
+	your program.
+
+	stack.test is a short test input to the stack machine. It is
+	run through your program when you hand it in, and the output
+	is also	handed in.
+
+
+        The symlinked files (see "man ln") are that way to emphasize
+        that they are read-only -- when we test your program, we already
+        have our own versions.
+
+
+Instructions
+------------
+
+	To compile and run your program, type:
+
+	% make test
+
+        Try it now -- it should work, and print "Nothing implemented"
+        (among a few other things).
+
+
+        To simply compile your program, type
+
+        % make compile
+
+
+	Instructions for turning in the assignment will be posted on the
+	course web page.
+
+	GOOD LUCK!
+
+---8<------8<------8<------8<---cut here---8<------8<------8<------8<---
+
+Questions on PA1
+----------------
+
+1. Describe your implementation of the stack machine in a single short
+   paragraph.
+   
+   My implementation of the stack machine is powered by a singly-linked Stack, each instance
+   of which has a head element and tail, representing the next node in the linked list.
+
+
+2. List 3 things that you like about the Cool programming language.
+	* I like that it supports inheritance, which significantly increases it's capability.
+	* I actually kind of like its syntax for return type declarations, it kind of makes readable sense
+	  to succeed, rather than preceed, the variable/method name.
+	* I like it's requirement of braces and semicolons. Even in languages where it's not required, I prefer
+      to use them for organization and readability.
+
+
+3. List 3 things you DON'T like about Cool.
+	* I'm not a fan of the sytanx for assignment. It's two characters, versus one, and requires a shfit key.
+	  I do get, however, that it makes it easier to write a compiler.
+	* There are some features that are missing, understandibly, from the language. None, however, that would
+	  necessarily prevent something from being accomplished.
+	* I tend to like a full-featured IDE to program with, like Visual Studio, and this program, obviously, lacks
+	  such a utility. I think I'm slightly reliant on IntelliSense, whcih probably isn't a good thing.
+
